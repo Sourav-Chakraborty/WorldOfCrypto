@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom'
 import { useGetCryptosQuery } from '../Services/cryptoApi'
 import Cryptocurrencies from './Cryptocurrencies'
 import News from './News'
+import Loader from './Loader'
 
 const {Title}=Typography
 
@@ -14,8 +15,8 @@ export default function Homepage() {
 
     const globalStats=data?.data?.stats
     if(isFetching)
-        return "Loading ..."
-    console.log(data)
+        return <Loader/>
+   
     return (
         <div>
             <Title level={2} className="heading">Global Crypto market</Title>
