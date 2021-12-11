@@ -1,3 +1,8 @@
+A react js application that uses api to fetch all information related to crypto currency,user can see their market value,exchanges,related news.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
